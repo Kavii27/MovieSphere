@@ -25,8 +25,8 @@ const Header = () => {
             Trending
           </NavLink>
 
-          <NavLink to="/newreleases" className={({ isActive }) => isActive ? active : inactive}>
-            New Releases
+          <NavLink to="/upcoming" className={({ isActive }) => isActive ? active : inactive}>
+            Upcoming
           </NavLink>
         </div>
 

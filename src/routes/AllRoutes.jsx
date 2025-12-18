@@ -5,8 +5,8 @@ const AllRoutes = () => {
     return(
         <Routes>
             <Route path="/" element={<MovieList/>} />
-            <Route path="/trending" element={<MovieList/>} />
-            <Route path="/newreleses" element={<MovieList/>} />
+            <Route path="/trending" element={<MovieList/>} /> {/*https://api.themoviedb.org/3/movie/top_rated*/}
+            <Route path="/upcoming" element={<MovieList/>} /> {/*https://api.themoviedb.org/3/movie/upcoming */}
         </Routes>
     );
 };
