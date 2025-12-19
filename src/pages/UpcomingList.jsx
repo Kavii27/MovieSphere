@@ -1,20 +1,20 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import MovieCard from "../components/MovieCard";
 
-const TrendingList = () => {
+const MovieList = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
     const fetchMovies = async () => {
       try {
         const response = await fetch(
-          "https://api.themoviedb.org/3/movie/top_rated?api_key=cad28c03141d9237941304b4f19587fa"
+          "https://api.themoviedb.org/3/movie/upcoming?api_key=cad28c03141d9237941304b4f19587fa"
         );
 
         const data = await response.json();
         setMovies(data.results);
       } catch (error) {
-        console.error("Error fetching Trending movies", errors);
+        console.error("Error fetching movies", error);
       }
     };
 
@@ -29,4 +29,4 @@ const TrendingList = () => {
   );
 };
 
-export default TrendingList;
+export default MovieList;
