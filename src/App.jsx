@@ -1,14 +1,13 @@
 import './App.css'
-import Header from './components/header';
+
 import AllRoutes from './routes/AllRoutes';
 
 function App() {
-  return(
-    <div >
-      <Header />
+  return (
+    <div>
       <AllRoutes />
     </div>
   );
 }
 
-export default App
+export default App;
