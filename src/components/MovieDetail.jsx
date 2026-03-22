@@ -77,22 +77,22 @@ const MovieDetail = () => {
                       -mt-20 sm:-mt-28 md:-mt-32 lg:-mt-36 relative">
 
         {/* Poster + Header */}
-        <div className="flex flex-col sm:flex-row gap-5 sm:gap-7 lg:gap-10 items-end">
+        <div className="flex flex-col sm:flex-row gap-5 sm:gap-7 lg:gap-10 items-center sm:items-end">
 
           {/* Poster */}
-          <div className="flex-shrink-0 self-center sm:self-auto">
+          <div className="flex-shrink-0">
             {movie.poster_path ? (
               <img
                 src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                 alt={movie.title}
                 className="
-                  w-32 sm:w-44 md:w-52 lg:w-60
+                  w-36 sm:w-44 md:w-52 lg:w-60
                   rounded-xl border-2 border-white/10 shadow-2xl
                 "
               />
             ) : (
               <div className="
-                w-32 sm:w-44 md:w-52 lg:w-60
+                w-36 sm:w-44 md:w-52 lg:w-60
                 aspect-[2/3] rounded-xl border-2 border-white/10
                 bg-[#1e1b2e] flex items-center justify-center
                 text-gray-500 text-sm

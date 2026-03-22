@@ -4,9 +4,10 @@ const MovieCard = ({ movie }) => {
   const navigate = useNavigate(); 
 
   return (
-    <div onClick={() => navigate(`/movie/${movie.id}`)}
-    className="w-full bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer">
-      
+    <div
+      onClick={() => navigate(`/movie/${movie.id}`)}
+      className="w-full bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-xl md:hover:scale-105 transition-all duration-300 cursor-pointer"
+    >
       <div className="relative">
         <img
           src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
@@ -18,7 +19,7 @@ const MovieCard = ({ movie }) => {
 
       <div className="p-3 sm:p-4">
         <p
-          className="text-lg sm:text-xl md:text-2xl text-gray-100 leading-tight tracking-wide mb-2 line-clamp-2"
+          className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-100 leading-tight tracking-wide mb-2 line-clamp-2"
           style={{ fontFamily: "'Bebas Neue', cursive" }}
         >
           {movie.title}
