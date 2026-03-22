@@ -29,7 +29,7 @@ const Header = () => {
           to="/"
           className="text-2xl font-extrabold bg-gradient-to-r from-purple-500 via-purple-600 to-indigo-600 bg-clip-text text-transparent"
         >
-          MovieSphereX
+          MovieSphere
         </Link>
 
         {/* Desktop Nav */}
